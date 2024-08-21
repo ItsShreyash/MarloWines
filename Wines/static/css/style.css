@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: white; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+    /* background-color: black; */
+    border-width: 0xp;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    justify-content: end;
+    row-gap: 100px;
+}
+
+.brandContainer{
+    padding: 0px;
+    margin: 0px;
+    margin-right: 85px;
+    /* padding-right: 40px; */
+    background-color: black;
+}
+
+
+#brandname{
+    text-align: center; 
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    font-size: 40px;
+    align-self: self-start; 
+    padding-left: 26px;
+    margin: 0px;   
+    height: 59px;
+    width: 325px;
+}
+
+.heading1{
+    color: #f8b10b;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+}
+
+
+
+.navbarr li{
+    
+    margin: 0px;
+    border-width: 0px;
+    padding: 20px;
+    background-color: black;
+}
+
+nav{
+    background-color: black;
+    padding-left: 100px;
+}
+
+.navbarr{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.navbarr li a {
+    transition: all 0.7s ease 0s;
+}
+
+.navbarr li a:hover{
+    color: #f8b10b;
+    text-shadow: 0 5px 15px #FFB300;
+}
+
+header img{
+    cursor: pointer;
+}
+
+#aboutusdiv{
+    padding-left:150px;
+    padding-right:150px;
+    
+}
+
+#accesscontainer{
+    background-color: black;
+    padding-right: 20px;
+}
+
+/* body{
+    background-image: url(images/distillery1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1918px  933px;
+} */
+

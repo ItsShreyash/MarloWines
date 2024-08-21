@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}" />  -->
+    <link rel="stylesheet" href="{% static 'css/prodcutsStyle.css' %}" /> 
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    
+    <!-- <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prodcutsStyle.css" /> -->
+    <!-- <script src="{% static 'js/products.js' %}"></script> -->
+    
+  </head>
+  <style>
+    
+  </style>
+  <body>
+    {% include 'header2.html' %}
+
+    <!-- Products -->
+
+    <div class="small-container">
+      <!-- <h2 style="text-align: center;">Featured Products</h2> -->
+
+      <!-- WINES -->
+      
+      <h2 class="categories">WINES</h2>
+
+      <div class="row">
+        <div id="pr-1" class="col-1" >
+          <a href="{% url 'product_1' %}" target="_blank" style="text-decoration: none;">
+            <img src="{% static 'images/sirak 1000 red wine.jpg'%}" alt="Sirak1000redwine" />
+            </a>
+          <h4>Sirak 1000 RED WIN</h4>
+          <p>Rs500.00</p>
+        </div>
+        <div id="pr-2" class="col-1" onclick="pr_2()">
+          <a href="{% url 'product_2' %}" target="_blank" style="text-decoration: none;">
+            <img src="{% static 'images/york cabernet merlot.jpg'%}" alt="YorkCabbernetMerlot" />
+            </a>
+          <!-- <img
+            src="images/york cabernet merlot.jpg"
+            alt="YorkCabbernetMerlot"
+          /> -->
+          <h4>YORK CABERNET MERLOT</h4>
+          <p>Rs500.00</p>
+        </div>
+        <div id="pr-3" class="col-1" onclick="pr_3()">
+          <a href="{% url 'product_3' %}" target="_blank" style="text-decoration: none;">
+            <img src="{% static 'images/sula port wine.jpg'%}" alt="YorkCabbernetMerlot" />
+            </a>          
+          <h4>SULA PORT WINE</h4>
+          <p>Rs500.00</p>
+        </div>
+        <div id="pr-4" class="col-1" onclick="pr_4()">
+          <a href="{% url 'product_4' %}" target="_blank" style="text-decoration: none;">
+            <img src="{% static 'images/big banyan merlot red wine.jpg'%}" alt="YorkCabbernetMerlot" />
+            </a> 
+          <!-- <img
+            src="images/big banyan merlot red wine.jpg"
+            alt="BigBanyanMerlotRedWine"
+          /> -->
+          <h4>BIG BANYAN MERLOT RED WINE</h4>
+          <p>Rs500.00</p>
+        </div>
+      </div>
+
+      <hr size="8" width="90%" color="yellow " class="horizontalLine" />
+      <h2 class="categories">RUM</h2>
+
+      <!-- RUM -->
+
+      <div class="row">
+        <div id="pr-5" class="col-1" onclick="pr_5()">
+          <img src="{% static 'images/old-monk-gold-reserve.jpg'%}" alt="old-monk-gold-reserve" />
+          <!-- <img
+            src="images/old-monk-gold-reserve.jpg"
+            alt="old-monk-gold-reserve"
+          /> -->
+          <h4>Old Monk Gold Reserve</h4>
+          <p>Rs500.00</p>
+        </div>
+        <div id="pr-6" class="col-1" onclick="pr_6()">
+
+          <img src="{% static 'images/captian morgan.jpg'%}" alt="captain-morgan" />
+          <!-- <img src="images/captian morgan.jpg" alt="captain-morgan" /> -->
+          <h4>Captain Morgan</h4>
+          <p>Rs500.00</p>
+        </div>
+        <div id="pr-7" class="col-1" onclick="pr_7()">
+          <img src="{% static 'images/bacardi gold rum.jpg'%}" alt="bacardi-gold-rum" />
+          <!-- <img src="images/bacardi gold rum.jpg" alt="bacardi-gold-rum" /> -->
+          <h4>Bacardi Gold Rum</h4>
+          <p>Rs500.00</p>
+        </div>
+        <div id="pr-8" class="col-1" onclick="pr_8()">
+          <img src="{% static 'images/murano rum.jpg'%}" alt="Murano-rum" />
+          <!-- <img src="images/murano rum.jpg" alt="Murano-rum" /> -->
+          <h4>Murano Rum</h4>
+          <p>Rs500.00</p>
+        </div>
+      </div>
+
+      <hr size="8" width="90%" color="yellow " class="horizontalLine" />
+      <h2 class="categories">WHISKEY</h2>
+
+      <!-- whiskey -->
+
+      <div class="row">
+        <div id="pr-9" class="col-1" onclick="pr_9()">
+          <img src="{% static 'images/fireball.jpg'%}" alt="fireball" />
+          <!-- <img src="images/fireball.jpg" alt="fireball" /> -->
+          <h4>Fireball</h4>
+          <p>Rs500.00</p>
+        </div>
+        <div id="pr-10" class="col-1" onclick="pr_10()">
+          <img src="{% static 'images/imperial blue.jpg'%}" alt="imperial-blue" />
+          <!-- <img src="images/imperial blue.jpg" alt="imperial-blue" /> -->
+          <h4>Imperial-blue</h4>
+          <p>Rs500.00</p>
+        </div>
+        <div id="pr-11" class="col-1" onclick="pr_11()">
+          <img src="{% static 'images/mc reserve.jpg'%}" alt="mc-reserve" />
+          <!-- <img src="images/mc reserve.jpg" alt="mc-reserve" /> -->
+          <h4>MC Reserve</h4>
+          <p>Rs500.00</p>
+        </div>
+        <div id="pr-12" class="col-1" onclick="pr_12()">
+          <img src="{% static 'images/royal stag.jpg'%}" alt="Royal-Stag" />
+          <!-- <img src="images/royal stag.jpg" alt="Royal-Stag" /> -->
+          <h4>Royal Stag</h4>
+          <p>Rs500.00</p>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

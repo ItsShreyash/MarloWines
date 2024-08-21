@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    
+</head>
+<body>
+<section>
+    {% include 'header2.html' %}
+
+
+    <div class = "row"> 
+    <div class="c1">
+       <h1> Welcome </h1>
+       <h2> To Maarlo Wines </h2> 
+       <h3> The one stop shop for all your party needs </h3>
+       <p> Everything delivered to your house directly </p>
+       <a href="{% url 'productspage' %}"><button type="button"> EXPLORE </button></a>
+       <!-- <button type="button"> EXPLORE </button> -->
+    </div>
+    <div class="c2">
+        <img src= "https://cdn-icons-png.flaticon.com/512/282/282476.png" class="bottle">
+    </div>
+   </div> 
+</section>
+
+<hr style="height:2px;border: width 30%;;color: yellow ;background-color:yellow">
+<br>
+<br>
+<section class="c1">
+    <h4>
+        Welcome to Maarlo Wines, your ultimate destination for exceptional wines and unparalleled wine experiences.
+        <br>
+        At Maarlo Wines, we are passionate about curating a selection of the finest wines from around the world, meticulously chosen to delight both the novice and the connoisseur.
+        <br>
+        Our commitment to quality is unwavering, and we take pride in offering a diverse range of varietals, vintages, and styles to suit every palate.
+        <br>
+        Whether you're seeking a rare vintage for a special occasion, exploring new flavors, or simply looking for your favorite go-to wine, Maarlo Wines is your trusted source.
+        <br>
+        Our knowledgeable and friendly team is here to guide you through our extensive collection, providing expert recommendations and helping you discover hidden gems. 
+        <br>
+        But Maarlo Wines is more than just a wine shop; it's a place where wine enthusiasts come together to celebrate the art of winemaking. Join us for wine tastings, events, and workshops designed to deepen your appreciation for wine.
+        <br>
+        We believe that the best wines are best enjoyed in good company, and we invite you to become a part of our vibrant wine-loving community.
+        <br>
+        Thank you for choosing Maarlo Wines as your wine destination. We look forward to sharing our passion for wine with you and helping you discover the perfect bottle for every occasion. Cheers to unforgettable moments, exceptional wines, and the joy of discovery. 
+        <br>
+        Welcome to Maarlo Wines!
+    </h4>
+</section>
+
+</body>
+</html>

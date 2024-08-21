@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}" />  -->
+    <!-- <link rel="stylesheet" href="{% static 'css/prodcutsStyle.css' %}" />  -->
+    <link rel="stylesheet" href="{% static 'css/SingleProduct.css' %}" /> 
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    
+  </head>
+  <body>
+    
+    {% include 'header2.html'%}
+
+    <div class="container">
+      <div class="row">
+        <div class="Product-container">
+          <div class="imageContainer">
+            <img src="{% static 'images/sirak 1000 red wine.jpg'%}" alt="" />
+          </div>
+          <div class="textContainer">
+            <h1>SIRAK 1000 RED WINE</h1>
+            <h3>Availability (In Stock)</h3>
+            <br />
+            <ul>
+              <li>A medium-bodies wine made with oak infulence</li>
+              <li>Dominant red fruit aromas</li>
+              <li>Perfection of Old Red Wine</li>
+            </ul>
+            <br />
+            <p class="price">Price &#x20b9; 9500</p>
+            <br />
+
+            <!-- <form id="dropdown-quantity">
+              <label> Select Quantity </label>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </form> -->
+
+            <form action="{% url 'product_processing' %}" method="post">
+              {%csrf_token%}
+              <label for="selectOption">Select quantity</label>
+              <select name="selectedOption">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              <!-- Add more options as needed -->
+              </select>
+              <br>
+              <input  hidden type="text" name="product" value="SIRAK1000">
+              <input id="ordernow" type="submit" value="Add to Cart">
+            </form>
+            <br>
+            
+
+            <div></div>
+            <!-- <button id="ordernow" onclick="payment()">Order now</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

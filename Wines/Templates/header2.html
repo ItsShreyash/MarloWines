@@ -1,0 +1,21 @@
+
+<div class="navbar">
+    <nav>
+        <ul>
+            <li> <a href="{% url 'homepage' %}"> HOME </a> </li>
+            <li> <a href="{% url 'productspage' %}"> PRODUCTS </a> </li>
+            <li> <a href="{% url 'ContactUs' %}"> CONTACT US </a> </li>
+            <li>
+                {% if flag %}
+                    <a href="{% url 'logout' %}">LOGOUT</a>
+                {% else %}
+                    <a href="{% url 'loginpage' %}">LOGIN</a>
+                {% endif %}
+              </li>
+              <!-- {% if flag %}
+                <li> <a href="{% url 'cartpage' %}"> CART </a> </li>
+              {% endif %} -->
+
+        </ul>
+    </nav>
+</div>

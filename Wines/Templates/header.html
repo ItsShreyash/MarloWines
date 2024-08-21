@@ -1,0 +1,26 @@
+<!-- Header to every site -->
+
+<header>
+      
+    <div class="brandContainer">
+      <a href="{% url 'homepage' %}"><h1 id="brandname">MAARLO WINES</h1></a>
+    </div>
+    
+
+    <div id="accesscontainer">
+      <nav>
+        <ul class="navbarr">
+          <li><a href="{% url 'productspage' %}">Products</a></li>
+          <li><a href="{% url 'ContactUs' %}">Contact Us </a></li>
+          <li>
+            {% if flag %}
+                <a href="{% url 'logout' %}">Logout</a>
+            {% else %}
+                <a href="{% url 'loginpage' %}">Login</a>
+            {% endif %}
+          </li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>

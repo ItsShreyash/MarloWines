@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="SingleProduct.css" />
+    <script src="products.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1 id="brandname">MAARLO WINES</h1></a>
+
+      <div id="accesscontainer">
+        <nav>
+          <ul class="navbarr">
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="Product-container">
+          <div class="imageContainer">
+            <mg src="images/imperial blue.jpg" alt="" />
+          </div>
+          <div class="textContainer">
+            <h1>iMPERIAL BLUE</h1>
+            <h3>Availability (In Stock)</h3>
+            <br />
+            <ul>
+              <li>A medium-bodies wine made with oak infulence</li>
+              <li>Dominant red fruit aromas</li>
+              <li>Perfection of Old Red Wine</li>
+            </ul>
+            <br />
+            <p class="price">Price &#x20b9; 9500</p>
+            <br />
+
+            <form id="dropdown-quantity">
+              <label> Select Quantity </label>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </form>
+            <br>
+            
+
+            <div></div>
+            <button id="ordernow" onclick="payment()">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
